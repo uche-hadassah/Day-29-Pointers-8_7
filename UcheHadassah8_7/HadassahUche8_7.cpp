@@ -1,7 +1,5 @@
-/*Write a void function that uses pointers to add a single character at the end of an existing 
-C-string. The string and the character should be taken as parameters. For example if str
-contains the C-string Hello World the function call addChar(str, ‘!’) should 
-change the string str to Hello World!*/
+/*Name:Uche Hadassah
+This program uses pointers to add a single character at the end of an existing string*/
 #include<iostream>
 #include<cstring>
 using namespace std;
@@ -20,11 +18,11 @@ int main()
 
 void addChar(char* str, char a)
 {
-	while (*str != '\0')
+	while (*str != '\0')//Loops until the end of the string
 	{
-		str++;
+		str++;//Increments the pointer position
 	}
-	*str = a;
-	str++;
-	*str = '\0';
+	*str = a;//Makes the last character a
+	str++;//Increment the opointer position 
+	*str = '\0';//and makes it the null character to terminate the string
 }
